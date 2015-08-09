@@ -1,0 +1,53 @@
+extends layout
+
+block content
+	form(id="test", method="post", action="/inventory")
+		input(type="text", name="pepElement", placeholder="Elemento Pep")
+		br
+		input(type="text", name="productor", placeholder="Productor")
+		br
+
+		input(type="text", name="zone", placeholder="Zona")
+		br
+
+		input(type="text", name="category", placeholder="Categoria")
+		br
+
+		input(type="text", name="subCategory", placeholder="Sub Categoria")
+		br
+
+		input(type="text", name="activity", placeholder="Actividad")
+		br
+
+		input(type="text", name="amount", placeholder="Cantidad")
+		br
+
+		input(type="text", name="kind", placeholder="Tipo")
+		br
+
+		select(name="ownThird")
+			option(value="") Propio o Tercero
+			option(value="Propio") Propio
+			option(value="Tercero") Tercero
+		br
+
+		input(type="number", name="hoursMen", placeholder="Horas Hombre")
+		br
+
+		input(type="text", name="machine", placeholder="Maquina Agricola")
+		br
+
+		input(type="number", name="hoursMachine", placeholder="Horas Maquina")
+		br
+
+		input(type="text", name="supplies", placeholder="Insumos")
+		br
+
+		input(type="number", name="quantity", placeholder="Cantidad")
+		br
+
+		input(type="string", name="measure", placeholder="Unidad de medida")
+		br
+		button(type="sumbit") submit
+
+	a(href="/inventory") ver todos

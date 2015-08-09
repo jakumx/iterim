@@ -1,0 +1,47 @@
+extends layout
+
+block content
+	if err
+		span se ha producido un error y no se ha podido agregar a tu inventario
+		br
+		span #{err}
+		br
+
+	table
+		thead
+			tr
+				th Elemento Pep
+				th Productor
+				th Zona
+				th Categoria
+				th Sub Categoria
+				th Actividad
+				th Cantidad
+				th Tipo
+				th Propio/Tercero
+				th Horas Hombre
+				th Maquina Agricola
+				th Horas Maquina
+				th Insumos
+				th Cantidad
+				th Unidad de Medida
+			each i in inventory
+				tr
+					td #{i.pepElement}
+					td #{i.productor}
+					td #{i.zone}
+					td #{i.category}
+					td #{i.subCategory}
+					td #{i.activity}
+					td #{i.amount}
+					td #{i.kind}
+					td #{i.ownThird}
+					td #{i.hoursMen}
+					td #{i.machine} 
+					td #{i.hoursMachine}
+					td #{i.supplies}
+					td #{i.quantity}
+					td #{i.measure}
+	br
+	br
+	a(href="/") Agregar Otro

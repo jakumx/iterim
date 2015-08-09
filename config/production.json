@@ -1,0 +1,12 @@
+{
+    "app": {
+        "host": "localhost",
+        "port": 9999,
+        "baseUrl": "http://localhost:9999",
+    },
+    "mongo": {
+        "host": "localhost",
+        "port": 27017,
+        "database": "iterim"
+    }
+}
